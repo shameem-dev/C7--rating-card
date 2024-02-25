@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* COLORS */
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(217, 12%, 58%);
+    --Light-Grey: hsl(215, 13%, 25%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    /* Fonts */
+    --overpass_FF:"Overpass", sans-serif;
+    --font-size: 15px;
+    --f-weight-small:400;
+    --f-weight-large:700;
+}
+
+body {
+    background: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--White);
+    font-family: var(--overpass_FF);
+}
+section {
+
+    background: var(--Dark-Blue);
+    max-width: 420px;
+    border-radius: 1em;
+    padding: 1rem;
+}
+.total-cont {
+    padding: 1em;
+}
+
+
+.total-cont .rating-set img {
+    background: var(--Light-Grey);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+    color: var(--Orange);
+
+    
+}
+.rating-set h3 {
+    font-size: 2rem;
+    font-weight: var(--f-weight-large);
+    padding: 0.5rem 0; 
+}
+.rating-set p {
+    color: var(--Grey);
+    padding-bottom: 1rem;
+}
+.num-rating ul {
+    display: flex;
+    
+}
+.num-rating ul li {
+    list-style-type: none;
+    color: var(--Grey);
+    width: 50px;
+    height: 50px;
+    background-color: var(--Light-Grey);
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.num-rating ul li:checked{
+    background-color: var(--Dark-Blue);
+}
+.num-rating ul li:hover {
+    background: var(--Orange);
+    color: var(--White);
+}
+.button button{
+    color: var(--White);
+    background: var(--Orange);
+    border: none;
+    width: 100%;
+    margin: 1rem 0 0;
+    padding: 1rem;
+    border-radius: 2em;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+.button button:hover, .button button:focus {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+ 
+
+.thank-you-state {
+    display: flex;
+    display: none;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.image-score {
+    margin: 1rem;
+}
+.image-score img {
+    padding-bottom: 1rem;
+}
+.image-score p {
+    background: var(--Light-Grey);
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    color: var(--Orange);
+    
+} 
+.thank-para {
+    text-align: center;
+}
+.thank-para h3 {
+    font-weight: 700;
+    padding: 0.5rem 0 1rem;
+
+
+}
+.thank-para p {
+    color: var(--Medium-Grey);
+}
